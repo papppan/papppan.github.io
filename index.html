@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='profile' class="h-100">
+<head>
+<title>Padmanath Madanagopalan</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+	            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+	<loading class="loading">
+	</loading>
+  <header class="sticky-xl-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+	<a class="navbar-brand" ui-sref="home" ui-sref="active">Padmanath Madanagopalan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsList" aria-controls="navbarsList" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsList">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="btn btn-link btn-lg px-4" ui-sref="researchgroup" ui-sref-active="active">Group</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-link btn-lg px-4" ui-sref="projects" ui-sref-active="active">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-link btn-lg px-4" ui-sref="teaching" ui-sref-active="active">Teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-link btn-lg px-4" ui-sref="publications" ui-sref-active="active">Publications</a>
+            </li>
+            <li class="nav-item">
+            <a class="btn btn-link btn-lg px-4" ui-sref="opportunities" ui-sref-active="active">Opportunities</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-link btn-lg px-4" ui-sref="outreach" ui-sref-active="active">Outreach</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="flex-shrink-0">
+    <div class="container my-5">
+
+  <ui-view>
+	  <div class="d-flex loading">
+		  <div class="spinner-border" role="status">
+			  <span class="visually-hidden">Loading...</span>
+		  </div>
+	  </div>
+  </ui-view>
+</div>
+
+</main>
+<!-- footer begins -->
+<footer class="pt-auto pb-3 px-1 footer mt-auto">
+      <hr>
+      <div class="row d-flex flex-row align-items-start justify-content-evenly mx-auto">
+        <div class="col-md-4">
+          209 New Building, The&nbsp;Institute&nbsp;of&nbsp;Mathematical&nbsp;Sciences<br> Chennai 600 113
+        </div>
+        <div class="col-md-4 text-md-center text-sm-start">
+          <span>padmanath&nbsp;(at)&nbsp;imsc&nbsp;(dot)&nbsp;res&nbsp;(dot)&nbsp;in</span>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p>&copy;&nbsp;2023 Padmanath&nbsp;Madanagopalan. All&nbsp;rights&nbsp;reserved.</p>          
+          <p class="text-muted">Website by <a href="https://dishajk.github.io">dishajk</a></p>          
+        </div>
+      </div>
+</footer> 
+<!-- footer ends -->
+
+<!-- libraries -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-ui-router.min.js"></script>
+
+<!-- scripts -->
+<script src="assets/js/profile.module.js"></script>
+
+<script src="assets/js/common.module.js"></script>
+<!-- <script src="assets/js/loading.component.js"></script> -->
+<script src="assets/js/loading.interceptor.js"></script>
+
+<script src="assets/js/main.module.js"></script>
+<script src="assets/js/main.routes.js"></script>
+</body>
+
+</html>

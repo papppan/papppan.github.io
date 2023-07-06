@@ -1,0 +1,108 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+#hero{
+    max-width: 1420px;
+  }
+  .boxShadow{
+    box-shadow: 1rem 1rem 3rem rgba(0,0,0,.175);
+    border-top: 0.8px solid rgba(0,0,0,.175);
+    border-left: 0.8px solid rgba(0,0,0,.175);
+  }
+  a.nav-link{
+    color: #623D32;
+    font-weight: 500;
+  }
+  a.nav-link:focus{
+    text-decoration: underline;
+  }
+  .nav-link:focus-visible{
+    box-shadow: none;
+  }
+  a.nav-link:hover{
+    text-decoration: underline;
+  }
+  a.nav-link.active:active,   a.nav-link:active{
+    text-decoration: underline;
+  }
+  #sidebar{
+    width: 280px;
+  }
+#navButton{
+	display: none;
+}
+@media screen and (max-width:576px){
+	#sidebar{
+		width: 100%;
+	}
+#navButton{
+	display: inline;
+	transform: scale(1.5);
+	transition: transform .2s;
+}
+#navButton:hover{
+	transform: scale(2);
+}
+#navButton:active{
+	border: none;
+}
+#navigation{
+	display: none;
+}
+}
+
+  .offcanvas{
+    --bs-offcanvas-height: 50vh
+  }
+  
+
+@media screen and (min-width:1096px) {
+    .offset{
+      margin-left: 4vw;
+    }
+  #sidebar{
+    height: 80vh;
+  }
+@media screen and (min-width:576px){
+    #navigation{
+      display: block;
+    }
+}
+  }
+  a.btn, a.btn.btn-link:active, .btn-link:focus-visible{
+    color: #eee;
+    text-decoration: none;
+  }
+ .btn-link:focus-visible, a.btn.btn-link:active:focus-visible{
+	  box-shadow: none;
+  }
+  a.btn:hover, a.btn:focus, a.btn.active:hover, .btn.active:active, a.btn.active{
+    color: #222;
+    background-color: #eee;
+  }
+
+.loading{
+	display: flex;
+	width: 100px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	transform: translate(-50%, -50%);
+}
+.publicationTitle{
+	font-size: 120%;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+.publicationAuthors{
+	font-size: 90%;
+	margin-bottom: 0;
+}
+.outreach-article{
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight: 700;
+	line-height: 1.5;
+	font-size: 135%;
+}
+.outreach-article>h2{
+	font-weight: 800;
+}
