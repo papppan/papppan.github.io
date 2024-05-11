@@ -37,6 +37,10 @@
 			url: '/outreach',
 			templateUrl: 'content/outreach.html' 
 		})
+		.state('TbcAV2023',{
+			url: '/outreach/TbcAV2023',
+			templateUrl: 'content/articles/TbcAV2023/TbcAV2023.html'
+		})
 		.state('D6b2023',{
 			url: '/outreach/D6b2023',
 			templateUrl: 'content/articles/D6b2023/D6b2023.html'
