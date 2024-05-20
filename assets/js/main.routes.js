@@ -9,9 +9,9 @@
 
 	function routesConfig($stateProvider){
 		$stateProvider
-		.state('projects',{
-			url: '/projects',
-			templateUrl: 'content/projects.html'
+		.state('others',{
+			url: '/others',
+			templateUrl: 'content/others.html'
 		})
 		.state('teaching', {
 			url: '/teaching',

@@ -10,7 +10,7 @@ This is a personal webpage created for Padmanath Madanagopalan.
 	- opportunities.html
 	- outreach.html
 	- profile.html
-	- projects.html
+	- others.html
 	- publications.html
 	- researchgroup.html
 	- teaching.html
